@@ -1,0 +1,164 @@
+.firstContainer {
+    margin: 50px 0px;
+    margin-bottom: 150px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    .list {
+        padding: 4px 2px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: capitalize;
+        list-style: none;
+        height: 40px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .reactJS {
+        color: red;
+        border: 1px solid red;
+
+        &:hover {
+            background: red;
+        }
+    }
+
+    .mongoDB {
+        color: green;
+        border: 1px solid green;
+
+        &:hover {
+            background: green;
+        }
+    }
+
+    .expressJS {
+        color: rgba(233,133,122,0.6);
+        border: 1px solid rgba(233,133,122,0.6);
+
+        &:hover {
+            background: rgba(233,133,122,0.6);
+        }
+    }
+
+    .nextjs {
+        color: #FF7396;
+        border: 1px solid #FF7396;
+
+        &:hover {
+            background: #FF7396;
+        }
+    }
+
+    .typescript {
+        color: rgba(3,138,255,0.6);
+        border: 1px solid rgba(3,138,255,0.6);
+
+        &:hover {
+            background: rgba(3,138,255,0.6);
+        }
+    }
+    .rpa {
+        color: rgba(241, 90, 34, 1);
+        border: 1px solid rgba(241, 90, 34, 1);
+
+        &:hover {
+            background: rgba(241, 90, 34, 1);
+        }
+    }
+    .flutter {
+        color: rgba(100,116,116, 1);
+        border: 1px solid rgba(100,116,116, 1);
+
+        &:hover {
+            background: rgba(100,116,116,1);
+        }
+    }
+    .html5 {
+        color: rgba(217,70,239,0.8);
+        border: 1px solid rgba(217,70,239,0.8);
+
+        &:hover {
+            background: rgba(217,70,239,0.8);
+        }
+    }
+    .css {
+        color: rgba(77,238,234, 1);
+        border: 1px solid rgba(77,238,234,1);
+
+        &:hover {
+            background: rgba(77,238,234,1);
+        }
+    }
+    .nodeJS {
+        color: rgb(255,231,0);
+        border: 1px solid rgba(255,231,0);
+
+        &:hover {
+            background: rgba(255,231,0);
+        }
+    }
+    .nestjs {
+        color: #8EA8FF;
+        border: 1px solid #8EA8FF;
+
+        &:hover {
+            background: #8EA8FF;
+        }
+    }
+    .git {
+        color: #1562C1;
+        border: 1px solid #1562C1;
+
+        &:hover {
+            background: #1562C1;
+        }
+    }
+    .mocha {
+        color: #83018E;
+        border: 1px solid #83018E;
+
+        &:hover {
+            background: #83018E;
+        }
+    }
+    .redux {
+        color: #39FF14;
+        border: 1px solid #39FF14;
+
+        &:hover {
+            background: #39FF14;
+        }
+    }
+    .tailwindcss {
+        color: #EA047E;
+        border: 1px solid #EA047E;
+
+        &:hover {
+            background: #EA047E;
+        }
+    }
+    .graphql {
+        color: #D58BDD;
+        border: 1px solid #D58BDD;
+
+        &:hover {
+            background: #D58BDD;
+        }
+    }
+}

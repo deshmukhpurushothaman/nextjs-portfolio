@@ -1,0 +1,31 @@
+.mainContainer {
+    //position: relative;
+    box-shadow: 6px 6px 8px #101014, -6px -6px 8px #1e1e23;
+    max-width: 1200px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .name {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 22px;
+        color: rgb(107 114 128/0.9)
+    }
+
+    .socialLinks {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        ul {
+            list-style: none;
+            li {
+            margin: 10px 0;
+            }
+        }
+    }
+}
