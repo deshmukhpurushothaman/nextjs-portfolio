@@ -7,7 +7,7 @@ const Projects = () => {
             <h2>Projects</h2>
             <div className={styles.grid}>
                 {ProjectsData.map((n) => (
-                    <a href="https://nextjs.org/docs" target="_blank" className={styles.card}>
+                    <a href="https://nextjs.org/docs" target="_blank" rel="noopener noreferrer" className={styles.card} key={n.id}>
                         <h2>{n.name} &rarr;</h2>
                         <p>{n.techs}</p>
                     </a>
