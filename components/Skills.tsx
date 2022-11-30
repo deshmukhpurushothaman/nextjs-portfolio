@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Typography from '@mui/material/Typography';
 import classes from '../styles/Skills.module.scss';
 import ReactJS from '../assets/react.png'
@@ -9,8 +10,36 @@ import MongoDB from '../assets/mongodb.png'
 import NextJS from '../assets/nextjs.png'
 
 export default function Skills() {
+    const containerVariant = (direction: any, type: any, delay: any, duration: any) => ({
+        hidden: {
+            x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
+            y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
+            opacity: 0,
+            transition: {
+                type: 'tween',
+                delay: 1,
+                duration: 1,
+            },
+        },
+        visible: {
+            x: 0,
+            y: 0,
+            opacity: 1,
+            transition: {
+                type,
+                delay,
+                duration,
+                ease: 'easeOut',
+            },
+        },
+    });
     return (
-        <div className={classes.homeSkills}>
+        <motion.div
+            variants={containerVariant('right', 'tween', 2, 1.3)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className={classes.homeSkills}>
             <Typography variant="h3">Major Tech Stack</Typography>
 
             <div className={classes.homeCubeSkills}>
@@ -52,6 +81,6 @@ export default function Skills() {
                 <SiNodedotjs />
                 <SiThreedotjs />
             </div> */}
-        </div>
+        </motion.div>
     )
 }

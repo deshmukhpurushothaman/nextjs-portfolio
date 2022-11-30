@@ -6,14 +6,31 @@ import { useState } from 'react';
 
 const Projects = () => {
     const container = {
-        hidden: { opacity: 1, scale: 0 },
+        hidden: {
+            opacity: 0,
+            scale: 0,
+            x: 100,
+            transition: {
+                type: 'spring',
+                stiffness: 300,
+                damping: 140,
+            },
+        },
         visible: {
             opacity: 1,
             scale: 1,
+            x: 0,
             transition: {
-                delayChildren: 0.3,
-                staggerChildren: 0.2
+                // delayChildren: 0.3,
+                // staggerChildren: 0.2
+                type: 'spring',
+                // stiffness: 10,
+                // dampness: 8,
+                duration: 1
             }
+        },
+        hover: {
+            scale: 1.1,
         }
     };
     const item = {
@@ -42,8 +59,11 @@ const Projects = () => {
                         key={n}
                         className={styles.card}
                         layoutId={n.id}
-                        // variants={item}
-                        whileHover={{ scale: 1.2, opacity: 1 }}
+                        variants={container}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: false, amount: 0.25 }}
+                        whileHover="hover"
                     // onClick={() => { setSelectedId(n.id); setSelectedProject(n) }} 
                     >
                         <motion.a key={n.id}>
