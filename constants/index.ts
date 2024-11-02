@@ -35,10 +35,16 @@ export const ExperienceData = [
     },
     {
         id: 5,
-        date: "Feb 2022 - Present",
+        date: "Feb 2022 - Apr 2023",
         title: "Full Stack Developer",
         company: "Nonceblox",
     },
+    {
+        id: 6,
+        date: "Apr 2023 - Oct 2024",
+        title: "Full Stack Developer",
+        company: "Pittsburgh Knights"
+    }
 ];
 
 export const ProjectsData = [
@@ -65,13 +71,6 @@ export const ProjectsData = [
         id: 4,
         name: "Result Analysis ",
         //   imageSrc: img4,
-        techs: "Automation Anywhere v11.x",
-        github: "#",
-    },
-    {
-        id: 5,
-        name: "Own Video Blog",
-        //   imageSrc: img5,
         techs: "Automation Anywhere v11.x",
         github: "#",
     },
@@ -159,6 +158,12 @@ export const ProjectsData = [
         techs: "React JS, Express JS, Node JS, MongoDB, Nest JS, Docker",
         github: "#",
     },
+    {
+        id: 18,
+        name: "Matchbot",
+        techs: "React JS, Next JS, Nest JS, PostgreSQL, Azure, Docker, Kubernetes, StrapiJS, Discord JS",
+        github: "#"
+    }
 ];
 
 export const MyStackData = [
@@ -166,18 +171,24 @@ export const MyStackData = [
     "MongoDB",
     "Express",
     "Node JS",
+    "NextJS",
+    "Nest JS",
+    "PostgreSQL",
     "Typescript",
+    "Docker",
+    "Kubernetes",
+    "Azure",
+    "Go(Golang)",
     "RPA",
     "Flutter",
     "HTML5",
     "CSS",
-    "NextJS",
-    "Nest JS",
     "Git",
     "Mocha",
     "Redux",
     "Tailwind CSS",
     "GraphQL",
+    "Discord JS",
 ]
 
 //   export const SocialLinks = [

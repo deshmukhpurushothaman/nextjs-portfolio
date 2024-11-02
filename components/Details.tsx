@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 import classes from '../styles/Details.module.scss';
 
 const Details = () => {
@@ -54,6 +55,16 @@ const Details = () => {
                             href="https://github.com/deshmukhpurushothaman/"
                         ><GitHubIcon />
                         </a></li>
+                    <li>
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="mailto:deshmukhpurushothaman@gmail.com"
+                            aria-label="email"
+                        >
+                            <EmailIcon />
+                        </a>
+                    </li>
                 </ul>
             </div>
         </motion.div>

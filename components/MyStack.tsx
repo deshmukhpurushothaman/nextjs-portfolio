@@ -26,7 +26,13 @@ const MyStack = () => {
                         ${title == 'Mocha' ? classes.mocha : ''}    
                         ${title == 'Redux' ? classes.redux : ''}
                         ${title == 'Tailwind CSS' ? classes.tailwindcss : ''}
-                        ${title == 'GraphQL' ? classes.graphql : ''}                    
+                        ${title == 'GraphQL' ? classes.graphql : ''}
+                        ${title == 'PostgreSQL' ? classes.postgresql : ''}
+                        ${title == 'Docker' ? classes.docker : ''}
+                        ${title == 'Kubernetes' ? classes.kubernetes : ''}
+                        ${title == 'Azure' ? classes.azure : ''}
+                        ${title == 'Discord JS' ? classes.discordjs : ''}
+                        ${title == 'Go(Golang)' ? classes.golang : ''}                    
                         `}
                     >
                         <a href="/" target="_blank" rel="noopener noreferrer">

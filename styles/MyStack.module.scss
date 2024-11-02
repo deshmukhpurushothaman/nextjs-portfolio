@@ -37,7 +37,14 @@
             background: red;
         }
     }
+    .kubernetes {
+        color: red;
+        border: 1px solid red;
 
+        &:hover {
+            background: red;
+        }
+    }
     .mongoDB {
         color: green;
         border: 1px solid green;
@@ -55,7 +62,14 @@
             background: rgba(233,133,122,0.6);
         }
     }
+    .azure {
+        color: rgba(233,133,122,0.6);
+        border: 1px solid rgba(233,133,122,0.6);
 
+        &:hover {
+            background: rgba(233,133,122,0.6);
+        }
+    }
     .nextjs {
         color: #FF7396;
         border: 1px solid #FF7396;
@@ -121,6 +135,14 @@
             background: #8EA8FF;
         }
     }
+    .postgresql {
+        color: rgb(255,231,0);
+        border: 1px solid rgba(255,231,0);
+
+        &:hover {
+            background: rgba(255,231,0);
+        }
+    }
     .git {
         color: #1562C1;
         border: 1px solid #1562C1;
@@ -159,6 +181,30 @@
 
         &:hover {
             background: #D58BDD;
+        }
+    }
+    .docker {
+        color: #D58BDD;
+        border: 1px solid #D58BDD;
+
+        &:hover {
+            background: #D58BDD;
+        }
+    }
+    .discordjs {
+        color: rgba(241, 90, 34, 1);
+        border: 1px solid rgba(241, 90, 34, 1);
+
+        &:hover {
+            background: rgba(241, 90, 34, 1);
+        }
+    }
+    .golang {
+        color: rgba(77,238,234, 1);
+        border: 1px solid rgba(77,238,234,1);
+
+        &:hover {
+            background: rgba(77,238,234,1);
         }
     }
 }

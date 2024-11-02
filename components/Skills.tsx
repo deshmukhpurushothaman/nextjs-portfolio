@@ -8,6 +8,8 @@ import Flutter from '../assets/flutter.png'
 import Automation from '../assets/automation.png'
 import MongoDB from '../assets/mongodb.png'
 import NextJS from '../assets/nextjs.png'
+import NestJS from "../assets/nestjs.jpg"
+import PostgreSQL from "../assets/postgresql.jpg"
 
 export default function Skills() {
     const containerVariant = (direction: any, type: any, delay: any, duration: any) => ({
@@ -44,7 +46,7 @@ export default function Skills() {
 
             <div className={classes.homeCubeSkills}>
                 <div className={classes.homeCubeSkillsFace1}>
-                    <Image src={ReactJS} alt="Face1" />
+                    <Image src={PostgreSQL} alt="Face1" />
                 </div>
 
                 <div className={classes.homeCubeSkillsFace2}>
@@ -52,7 +54,7 @@ export default function Skills() {
                 </div>
 
                 <div className={classes.homeCubeSkillsFace3}>
-                    <Image src={Flutter} alt="Face3" />
+                    <Image src={NestJS} alt="Face3" />
                 </div>
 
                 <div className={classes.homeCubeSkillsFace4}>
